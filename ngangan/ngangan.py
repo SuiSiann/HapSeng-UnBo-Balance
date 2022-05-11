@@ -15,6 +15,8 @@ with open(
         reader = csv.reader(tong)
         next(reader, None)
         senn_dict = {}
+        ngangan = []
         for pit in reader:
             if '(文)' in pit[1]:
-                print(pit[:2])
+                ngangan.append(pit[:2])
+        print(ngangan)

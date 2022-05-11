@@ -24,29 +24,8 @@ with open(
         print(ngangan_w, ngangan_p)
 
 
-
-
-print(senn[0], 'X', ngangan_w[0])
-print(senn[1], ngangan_w[1], 'X')
-print('X', ngangan_w[2])
-print(ngangan_w[3], 'X')
-
-print(senn[0+2], 'X', ngangan_w[0+4])
-print(senn[0+3], ngangan_w[0+5], 'X')
-print('X', ngangan_w[0+6])
-print(ngangan_w[0+7], 'X')
-
-print(senn[0+2], 'X', ngangan_w[0+4])
-print(senn[1+2], ngangan_w[1+4], 'X')
-print('X', ngangan_w[2+4])
-print(ngangan_w[3+4], 'X')
-
-print(senn[0+4], 'X', ngangan_w[0+8])
-print(senn[0+5], ngangan_w[0+9], 'X')
-print('X', ngangan_w[0+10])
-print(ngangan_w[0+11], 'X')
-
-print(senn[0+2+2], 'X', ngangan_w[0+4+4])
-print(senn[1+2+2], ngangan_w[1+4+4], 'X')
-print('X', ngangan_w[2+4+4])
-print(ngangan_w[3+4+4], 'X')
+for index in [0, 2, 4]:
+    print(senn[index], 'X', ngangan_w[index*2])
+    print(senn[1+index], ngangan_w[1+index*2], 'X')
+    print('X', ngangan_w[2+index*2])
+    print(ngangan_w[3+index*2], 'X')

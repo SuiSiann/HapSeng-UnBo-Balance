@@ -37,3 +37,18 @@ for index in range(0, 400, 2):
     fout.write('X' + ngangan_w[2+index*2]+ '\n')
     fout.write(ngangan_w[3+index*2] + 'X'+ '\n')
 fout.close()
+
+
+for index in range(0, 400, 2):
+    print(senn[index % 100], 'X', ngangan_p[index*2])
+    print(senn[(1+index) % 100], ngangan_p[1+index*2], 'X')
+    print('X', ngangan_p[2+index*2])
+    print(ngangan_p[3+index*2], 'X')
+
+fout = open('ngangan_p.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(senn[index % 100] + 'X' + ngangan_p[index*2] + '\n')
+    fout.write(senn[(1+index) % 100] + ngangan_p[1+index*2] + 'X'+ '\n')
+    fout.write('X' + ngangan_p[2+index*2]+ '\n')
+    fout.write(ngangan_p[3+index*2] + 'X'+ '\n')
+fout.close()

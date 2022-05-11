@@ -24,8 +24,12 @@ with open(
         print(ngangan_w, ngangan_p)
 
 
-print(senn[0], 'X', ngangan_w[0])
-print(senn[0], ngangan_w[0], 'X')
-print('X', ngangan_w[0])
-print(ngangan_w[0], 'X')
 
+print(senn[0], 'X', ngangan_w[0])
+print(senn[1], ngangan_w[1], 'X')
+print('X', ngangan_w[2])
+print(ngangan_w[3], 'X')
+print(senn[2], 'X', ngangan_w[4])
+print(senn[3], ngangan_w[5], 'X')
+print('X', ngangan_w[6])
+print(ngangan_w[7], 'X')

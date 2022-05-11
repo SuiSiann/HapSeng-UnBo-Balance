@@ -36,3 +36,4 @@ for index in range(0, 400, 2):
     fout.write(senn[(1+index) % 100] + ngangan_w[1+index*2] + 'X'+ '\n')
     fout.write('X' + ngangan_w[2+index*2]+ '\n')
     fout.write(ngangan_w[3+index*2] + 'X'+ '\n')
+fout.close()

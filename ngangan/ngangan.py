@@ -18,5 +18,5 @@ with open(
         ngangan = []
         for pit in reader:
             if '(文)' in pit[1]:
-                ngangan.append(pit[:2])
+                ngangan.append(pit[0])
         print(ngangan)

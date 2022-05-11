@@ -4,10 +4,9 @@ with open(
         '名姓字表 - 字姓.csv') as tong:
         reader = csv.reader(tong)
         next(reader, None)
-        senn_dict = {}
+        senn = []
         for pit in reader:
-                print(pit[2])
-
+            senn.append(pit[2])
 
 
 with open(
@@ -23,4 +22,10 @@ with open(
             if '(白)' in pit[1] or '(不標)' in pit[1]:
                 ngangan_p.append(pit[0])
         print(ngangan_w, ngangan_p)
+
+
+print(senn[0], 'X', ngangan_w[0])
+print(senn[0], ngangan_w[0], 'X')
+print('X', ngangan_w[0])
+print(ngangan_w[0], 'X')
 

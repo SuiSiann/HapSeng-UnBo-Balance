@@ -30,7 +30,7 @@ for index in range(0, 400, 2):
     print('X', ngangan_w[2+index*2])
     print(ngangan_w[3+index*2], 'X')
 
-fout = open('ngangan.txt', 'w')
+fout = open('ngangan_w.txt', 'w')
 for index in range(0, 400, 2):
     fout.write(senn[index % 100] + 'X' + ngangan_w[index*2] + '\n')
     fout.write(senn[(1+index) % 100] + ngangan_w[1+index*2] + 'X'+ '\n')
@@ -50,5 +50,46 @@ for index in range(0, 400, 2):
     fout.write(senn[index % 100] + 'X' + ngangan_p[index*2] + '\n')
     fout.write(senn[(1+index) % 100] + ngangan_p[1+index*2] + 'X'+ '\n')
     fout.write('X' + ngangan_p[2+index*2]+ '\n')
+    fout.write(ngangan_p[3+index*2] + 'X'+ '\n')
+fout.close()
+
+fout = open('ngangan_w1.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(senn[index % 100] + 'X' + ngangan_w[index*2] + '\n')
+fout.close()
+
+fout = open('ngangan_w2.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(senn[(1+index) % 100] + ngangan_w[1+index*2] + 'X'+ '\n')
+fout.close()
+
+fout = open('ngangan_w3.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write('X' + ngangan_w[2+index*2]+ '\n')
+fout.close()
+
+fout = open('ngangan_w4.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(ngangan_w[3+index*2] + 'X'+ '\n')
+fout.close()
+
+
+fout = open('ngangan_p1.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(senn[index % 100] + 'X' + ngangan_p[index*2] + '\n')
+fout.close()
+
+fout = open('ngangan_p2.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write(senn[(1+index) % 100] + ngangan_p[1+index*2] + 'X'+ '\n')
+fout.close()
+
+fout = open('ngangan_p3.txt', 'w')
+for index in range(0, 400, 2):
+    fout.write('X' + ngangan_p[2+index*2]+ '\n')
+fout.close()
+
+fout = open('ngangan_p4.txt', 'w')
+for index in range(0, 400, 2):
     fout.write(ngangan_p[3+index*2] + 'X'+ '\n')
 fout.close()

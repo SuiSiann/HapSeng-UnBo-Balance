@@ -15,21 +15,14 @@ with open(
         reader = csv.reader(tong)
         next(reader, None)
         senn_dict = {}
-        ngangan = []
+        ngangan_w = []
+        ngangan_p = []
         for pit in reader:
             if '(文)' in pit[1]:
-                ngangan.append(pit[0])
-        print(ngangan)
-
-
-
-with open(
-        '名姓字表 - 人名.csv') as tong:
-        reader = csv.reader(tong)
-        next(reader, None)
-        senn_dict = {}
-        ngangan = []
-        for pit in reader:
+                ngangan_w.append(pit[0])
             if '(白)' in pit[1]:
-                ngangan.append(pit[0])
-        print(ngangan)
+                ngangan_p.append(pit[0])
+            if '(不標)' in pit[1]:
+                ngangan_p.append(pit[0])
+        print(ngangan_w, ngangan_p)
+

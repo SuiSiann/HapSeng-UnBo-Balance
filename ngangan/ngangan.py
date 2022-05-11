@@ -24,7 +24,7 @@ with open(
         print(ngangan_w, ngangan_p)
 
 
-for index in [0, 2, 4]:
+for index in range(0, 400, 2):
     print(senn[index], 'X', ngangan_w[index*2])
     print(senn[1+index], ngangan_w[1+index*2], 'X')
     print('X', ngangan_w[2+index*2])
